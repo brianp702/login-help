@@ -8,7 +8,7 @@ This is a single page JavaScript app (jQuery/AJAX). The heavy lifting is done wi
 The backend code (ColdFusion) is confidential, and that's where all the interesting logic is. But the HTML, CSS and JavaScript files are public by viewing the source code of loginHelp.cfm.
 
 Noteworthy files:
-view-source:https://s706.dollarsonthenet.net/loginHelp.cfm
-https://s706.dollarsonthenet.net/js/loginhelp.js
-https://s706.dollarsonthenet.net/css/login.css
+* https://s706.dollarsonthenet.net/loginHelp.cfm (view source)
+* https://s706.dollarsonthenet.net/js/loginhelp.js
+* https://s706.dollarsonthenet.net/css/login.css
 
