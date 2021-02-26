@@ -1,5 +1,5 @@
 # LoginHelp
-Login help for users that forgot their credentials. Coded by Brian Payne during his employment at Shift4 Payments.
+Login help for users that forgot their credentials. Coded by Brian Payne during his employment at Shift4 Payments. This is one of the few publicly visible web sites that I (Brian) worked on at Shift4. Most of my work was confidential and secured behind logins and within web services.
 
 Open https://s706.dollarsonthenet.net/ and click the link "Login Help"
 
