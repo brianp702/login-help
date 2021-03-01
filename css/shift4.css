@@ -1,0 +1,348 @@
+@charset "utf-8";
+/*
+**	shift4.css
+**	
+**	Theme CSS overrides.
+*/
+
+.dotn-header {
+	color: #FFFFFF;
+	font-family: Arial, Tahoma, Helvetica;
+}
+
+.dotn-header .dotn-banner {
+	height: 109px;	
+	color: #FFFFFF;
+	background-color: #0082ca;
+	background: linear-gradient(to bottom, #0082ca, #004f97);
+	font-family: Arial, Tahoma, Helvetica;
+	height: 109px;
+	padding-top: 10px;
+	font-size: 13px;
+}
+
+.dotn-header .dotn-user-title a,
+.dotn-header .dotn-user-title a:visited {
+	color: #D4D4D4;
+}
+
+.dotn-header .dotn-user-title a:hover,
+.dotn-header .dotn-user-title a:active {
+	color: #FFFFFF;
+}
+
+.dotn-header h3 {
+	font-size: 18px;
+}
+
+.dotn-footer nav {
+	color: #D4D4D4;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+.dotn-header nav,
+.dotn-footer nav {
+	border-radius: 0;
+}
+
+.dotn-content {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	min-height: 600px;
+	background-color: #fff;
+	border: 1px solid rgba(34,36,38,.15);
+}
+
+
+.user {
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+}
+.draft {
+	font-size: 9pt;
+	font-style: normal;
+	font-weight: normal;
+}
+.draftBig {
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.black, a.black, a.black:visited, .warning, a.warning, a.warning:visited {
+	color: #000000;
+}
+.plain, a.plain:visited, .plainBlack, a.plainBlack:visited {
+	color: #000000;
+	text-decoration: none !important;
+}
+a.plain:Hover, a.plainBlack:Hover {
+	color: #339933;
+	text-decoration: none;
+}
+.white, a.white, a.white:visited {
+	color: #FFFFFF;
+}
+.plainWhite, a.plainWhite:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.plainWhite:Hover {
+	color: #660099;
+	text-decoration: none;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.wrap {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	-ms-word-break: break-all;
+}
+
+label.error {
+	color: #F00;
+}
+
+label .help-block{
+	font-weight: normal;
+}
+
+span.required, span.not-required {
+	margin-left: 2px;
+	color: #d2322d;
+	display: inline-block;
+	font-size: 0.8em;
+	font-weight: bold;
+	position: relative;
+	top: -0.2em;
+}
+span.not-required {
+	visibility: hidden;
+}
+
+h5, h6 {
+	font-weight: bold;
+}
+
+fieldset {
+	margin-bottom: 20px;
+}
+
+.panel-body > :first-child,
+.well > :first-child,
+.v-top > :first-child {
+	margin-top: 0;
+}
+
+.v-top > img {
+	vertical-align: top;
+}
+
+.margin-small,  .margin-small-top {
+	margin-top: 10px !important;
+}
+.margin,  .margin-top {
+	margin-top: 20px !important;
+}
+.margin-large,  .margin-large-top {
+	margin-top: 30px !important;
+}
+.margin-small,  .margin-small-bottom {
+	margin-bottom: 10px !important;
+}
+.margin,  .margin-bottom {
+	margin-bottom: 20px !important;
+}
+.margin-large,  .margin-large-bottom {
+	margin-bottom: 30px !important;
+}
+.margin-small,  .margin-small-left {
+	margin-left: 10px !important;
+}
+.margin,  .margin-left {
+	margin-left: 20px !important;
+}
+.margin-large,  .margin-large-left {
+	margin-left: 30px !important;
+}
+.margin-small,  .margin-small-right {
+	margin-right: 10px !important;
+}
+.margin,  .margin-right {
+	margin-right: 20px !important;
+}
+.margin-large,  .margin-large-right {
+	margin-right: 30px !important;
+}
+.padding-small,  .padding-small-top {
+	padding-top: 8px !important;
+}
+.padding,  .padding-top {
+	padding-top: 15px !important;
+}
+.padding-large,  .padding-large-top {
+	padding-top: 30px !important;
+}
+.padding-small,  .padding-small-bottom {
+	padding-bottom: 8px !important;
+}
+.padding,  .padding-bottom {
+	padding-bottom: 15px !important;
+}
+.padding-large,  .padding-large-bottom {
+	padding-bottom: 30px !important;
+}
+.padding-small,  .padding-small-left {
+	padding-left: 8px !important;
+}
+.padding,  .padding-left {
+	padding-left: 15px !important;
+}
+.padding-large,  .padding-large-left {
+	padding-left: 30px !important;
+}
+.padding-small,  .padding-small-right {
+	padding-right: 8px !important;
+}
+.padding,  .padding-right {
+	padding-right: 15px !important;
+}
+.padding-large,  .padding-large-right {
+	padding-right: 30px !important;
+}
+
+
+
+/* custom inclusion of right, left and below tabs */
+
+.tabs-bottom > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.tabs-bottom > .nav-tabs {
+  border-top: 1px solid #ddd;
+}
+
+.tabs-bottom > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+
+.tabs-bottom > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.tabs-bottom > .nav-tabs > li > a:hover,
+.tabs-bottom > .nav-tabs > li > a:focus {
+  border-top-color: #ddd;
+  border-bottom-color: transparent;
+}
+
+.tabs-bottom > .nav-tabs > .active > a,
+.tabs-bottom > .nav-tabs > .active > a:hover,
+.tabs-bottom > .nav-tabs > .active > a:focus {
+  border-color: transparent #ddd #ddd #ddd;
+}
+
+.text-red {
+	color: #FF0000;
+}
+.text-yellow {
+	color: #FFFF00;
+}
+.text-green {
+	color: #008000;
+}
+
+.table-nonfluid {
+	width: auto !important;
+}
+.panel-info .panel-footer {
+	color: #31708f;
+	background-color: #d9edf7;
+	background-image: linear-gradient(to top, #d9edf7 0, #c4e3f3 100%);
+	background-repeat: repeat-x;
+}
+
+hr.condensed{
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+hr.condensed-sm{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.scrollbars {
+  overflow:auto;
+}
+.height-200 {
+  height:200px;
+}
+.height-400 {
+  height:400px;
+}
+.height-600 {
+  height:600px;
+}
+.height-800 {
+  height:800px;
+}
+
+.block label,
+label.block{
+	display: block;
+}
+.checkbox-custom label {
+	font-weight: 400;
+}
+#termsRibbon {
+	margin: 0px 0px 0px 0px;
+}
+
+#termsRibbon p {
+	margin: 10px 0 10px 0px;
+}
+
+.brand-success {
+	color: #0ea46f;
+}
+.brand-warning {
+	color: #f2d024;
+}
+.brand-danger {	
+	color: #cc1f1a;
+}
+
+.label.brand-success {
+	background-color: #0ea46f;
+	color: white;
+}
+.label.brand-warning {
+	background-color: #f2d024;
+	color: white;
+}
+.label.brand-danger {	
+	background-color: #cc1f1a;
+	color: white;
+}
+
+.bootgrid-header .additional-actions,
+.bootgrid-footer .additional-actions{
+	margin: 0 20px 0 0;
+}

@@ -1,0 +1,538 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Expires" content="1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+
+    <title>Login Help</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/shift4.css">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-bs-dialog.js"></script>
+    <script src="/js/validate.min.js"></script>
+    <script src="/js/loginhelp.js"></script>
+    <script src="/js/loadingoverlay.min.js"></script>
+</head>
+
+<body style="position: relative;margin: 0;min-height: 100%;">
+    <header class="dotn-header">
+        <nav class="navbar navbar-inverse" style="min-height:70px; margin-bottom: 0;">
+            <div class="container-fluid">
+                <div class="text-right dotn-user-title col-xs-6" style="margin-top: 5px;">
+                    <h3>Login Help / Password Recovery</h3>
+                </div>
+            </div>
+        </nav>
+
+        <div class="NoPrint">
+            <nav class="navbar navbar-default hidden-print">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                    </div>
+                    <div id="nav-top" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav"></ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--/#hdrBtnBar-->
+
+    </header>
+
+    <div class="container dotn-content">
+
+        <div class="section initial" id="one">
+            <h1>Account</h1>
+            <p>Enter your account number and click <strong>Next</strong>.</p>
+
+            <form id="formOne" name="formOne" class="form-horizontal">
+
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+
+                <div class="form-group">
+                    <label for="accountNumber" class="col-sm-3 control-label">Account Number</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" name="accountNumber" id="accountNumber" value="" maxlength="8" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <div class="helpLinkContainer">
+                            <a class="helpLink">Forgot Account Number?</a>
+                            <div class="helpText alert alert-info">
+                                Contact an administrator for your account.</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+
+                        <button type="submit" name="submitAccountNumber" id="submitAccountNumber" class="btn btn-primary">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="two">
+            <h1>Username</h1>
+            <p>Enter your username and click <strong>Next</strong>.</p>
+
+            <form id="formTwo" name="formTwo" class="form-horizontal">
+
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+                <div class="form-group">
+                    <label for="username" class="col-sm-3 control-label">Username</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" name="username" id="username" value="" maxlength="35" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <div class="helpLinkContainer">
+                            <a class="helpLink" id="forgotUsername">Forgot Username?</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+
+                        <button type="submit" value="Next" name="submitUserName" id="submitUsername" class="btn btn-primary">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="twoA">
+            <h1>Forgot Username</h1>
+            <p>Enter the email address associated with your account and click <strong>Next</strong>.</p>
+
+            <form id="formTwoA" class="form-horizontal">
+
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+
+                <div class="form-group">
+                    <label for="emailAddress" class="col-sm-3 control-label">Email Address</label>
+                    <div class="col-sm-6">
+                        <input type="email" name="emailAddress" id="emailAddress" value="" maxlength="50" class="form-control" required>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <div class="helpLinkContainer">
+                            <a class="helpLink">Forgot Email Address?</a>
+                            <div class="helpText alert alert-info">
+                                Contact an administrator for your account.</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button type="submit" name="submitEmailAddress" id="submitEmailAddress" class="btn btn-primary">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="twoB">
+            <h1>Check Your Email</h1>
+            <p>You should receive an email from Shift4 that contains your username. After you receive the email, try and sign in using your valid credentials.</p>
+            <p>If you did not receive an email, contact an administrator for your account.</a>.</p>
+
+            <form class="form-horizontal" action="login.cfm">
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button type="submit" value="Ok" id="redirectToLoginTwoB" class="btn btn-primary">Ok</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="three">
+            <h1>Password</h1>
+            <p>Enter your password and click <strong>Next</strong>.</p>
+
+            <form id="formThree" class="form-horizontal">
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+                <div class="form-group">
+                    <label for="userPassword" class="col-sm-3 control-label">Password</label>
+                    <div class="col-sm-6">
+                        <input type="password" name="userPassword" id="userPassword" value="" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <div class="helpLinkContainer">
+                            <a class="helpLink" id="forgotPassword">Forgot Password?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button type="submit" name="submitUserPassword" id="submitUserPassword" class="btn btn-primary">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="threeOne">
+            <h1>Forgot Password</h1>
+            <p>You have multifactor authentication enabled. Please use the authenticator app on your device to generate a passcode. Then, enter the passcode and click <strong>Next.</strong></p>
+            <form id="formThreeOne" class="form-horizontal">
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+
+                <div class="form-group">
+                    <label for="userPasscode" class="col-sm-3 control-label">Passcode</label>
+                    <div class="col-sm-6">
+                        <input type="text" name="userPasscode" id="userPasscode" value="" maxlength="6" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <div class="helpLinkContainer">
+                            <a class="helpLink">What's a Passcode?</a>
+                            <div class="helpText alert alert-info">
+                                A passcode is a dynamic, six-digit code generated by the authenticator application you installed on your smart device and connected to your account when you enabled multifactor authentication.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button type="submit" name="submitUserPasscode" id="submitUserPasscode" class="btn btn-primary">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="threeOneA">
+            <h1>Change Your Password</h1>
+
+            <p>An email containing a verification code will be sent to the email address associated with your username. You should receive this email from Shift4. After you receive the email, enter the code below and enter a unique password in the fields.
+                Then, click <strong>Submit</strong>.</p>
+
+            <p>Passwords should be at least 8 characters. We highly recommend it contain alpha and numeric characters and at least one punctuation character. In addition to these rules, your Account Administrator set the following rules:
+            </p>
+            <div id="passwordRules"></div>
+
+            <form id="formThreeOneA" class="form-horizontal">
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+
+                <div class="form-group">
+                    <label for="verificationCode" class="col-sm-3 control-label">Verification Code</label>
+                    <div class="col-sm-6">
+                        <input type="text" value="" name="verificationCode" id="verificationCode" maxlength="10" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPassword" class="col-sm-3 control-label">New Password</label>
+                    <div class="col-sm-6">
+                        <input type="password" value="" name="newPassword" id="newPassword" autocomplete="off" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPassword" class="col-sm-3 control-label">Verify Password</label>
+                    <div class="col-sm-6">
+                        <input type="password" value="" name="newPasswordVerify" id="newPasswordVerify" autocomplete="off" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <div class="helpLinkContainer">
+                            <a class="helpLink" id="noPasscodeEmail">Did Not Receive Email?</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button type="submit" value="Submit" name="submitVerificationCodeAndNewPassword" id="submitVerificationCodeAndNewPassword" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="threeTwo">
+            <h1>Forgot Password</h1>
+            <p>Do you know the email address associated with your account?</p>
+            <form id="threeTwoform" class="form-horizontal">
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button type="button" id="knowEmailAddress" class="btn btn-primary">Yes</button>
+                        <button type="button" id="dontKnowEmailAddress" class="btn btn-primary">No</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="threeTwoA">
+            <h1>Additional Assistance Required</h1>
+            <p>It appears you have not configured your profile. For your login credentials, contact an administrator for your account.</a>.</p>
+        </div>
+
+        <div class="section" id="threeThree">
+            <h1>Forgot Password</h1>
+            <p>Your secret question is displayed below. Enter its corresponding answer and click <strong>Submit</strong>. (Your answers are not case sensitive and you will be prompted to answer several of your secret questions before you can continue.)</p>
+
+            <form id="formThreeThree" class="form-horizontal">
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+                <div id="threeThreeSecretQuestion">
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-6">
+                            <p class="form-control-static"><span id="question"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="answer" class="col-sm-3 control-label">Answer</label>
+                        <div class="col-sm-6">
+                            <input type="text" value="" name="answer" id="answer" maxlength="20" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button type="submit" name="submitSecretQuestion" id="submitSecretQuestion" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="threeThreeA">
+            <h1>Change Your Password</h1>
+            <p>You answered all your secret questions correctly. Now, enter a unique password in the fields and click <strong>Submit</strong>.</p>
+            <p>Passwords should be at least 8 characters. We recommend it contain alpha and numeric characters and at least one punctuation character. In addition to these rules, your Account Administrator set the following rules:
+            </p>
+
+            <div id="passwordRulesThreeThreeA"></div>
+            <form id="formThreeThreeA" class="form-horizontal">
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+
+                <div class="form-group">
+                    <label for="newPasswordThreeThreeA" class="col-sm-3 control-label">New Password</label>
+                    <div class="col-sm-6">
+                        <input type="password" value="" name="newPasswordThreeThreeA" id="newPasswordThreeThreeA" autocomplete="off" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPasswordVerifyThreeThreeA" class="col-sm-3 control-label">Verify Password</label>
+                    <div class="col-sm-6">
+                        <input type="password" value="" name="newPasswordVerifyThreeThreeA" id="newPasswordVerifyThreeThreeA" autocomplete="off" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button type="submit" name="submitNewPasswordThreeThreeA" id="submitNewPasswordThreeThreeA" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="threeFour">
+            <h1>Forgot Password</h1>
+            <p>Enter your email address. Then, click <strong>Submit.</strong>
+
+                <form id="formThreeFour" class="form-horizontal">
+                    <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+                    <div class="form-group">
+                        <label for="emailAddressThreeFour" class="col-sm-3 control-label">Email Address</label>
+                        <div class="col-sm-6">
+                            <input type="email" value="" name="emailAddressThreeFour" id="emailAddressThreeFour" maxlength="50" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-6">
+                            <div class="helpLinkContainer">
+                                <a class="helpLink">Forgot Email?</a>
+                                <div class="helpText alert alert-info">
+                                    Contact an administrator for your account.</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-6">
+                            <button type="submit" name="submitEmailAddressThreeFour" id="submitEmailAddressThreeFour" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+        </div>
+
+        <div class="section" id="fourA">
+            <h1>Passcode</h1>
+            <p>Are you able to generate a passcode?</p>
+
+            <form class="form-horizontal">
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button type="button" value="Yes" id="canGeneratePasscode" class="btn btn-primary">Yes</button>
+                        <button type="button" value="No" id="cannotGeneratePasscode" class="btn btn-primary">No</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="fourB">
+            <h1>Additional Assistance Required</h1>
+            <p>Based on your answers, you should be able to sign in. If you are still having trouble (or your account is locked out), contact an administrator for your account.</p>
+
+            <form class="form-horizontal" name="fourBForm" id="fourBForm">
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button type="submit" value="Ok" id="redirectToLoginFourB" class="btn btn-primary">Ok</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="five">
+            <h1>Reset</h1>
+            <p>Do you have the reset code you were instructed to write down when you enabled multifactor authentication?</p>
+
+            <form class="form-horizontal">
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button type="button" value="Yes" id="haveResetCode" class="btn btn-primary">Yes</button>
+                        <button type="button" value="No" id="noResetCode" class="btn btn-primary">No</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="fiveA">
+            <h1>Remove Authenticator</h1>
+            <p>To remove the authenticator from your account, enter the reset code below and click <strong>Remove.</strong></p>
+
+            <form id="formFiveA" class="form-horizontal">
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+
+                <div class="form-group">
+                    <label for="resetCode" class="col-sm-3 control-label">Reset Code</label>
+                    <div class="col-sm-6">
+                        <input type="text" value="" id="resetCode" name="resetCode" maxlength="50" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button type="submit" name="removeAuthenticator" id="removeAuthenticator" class="btn btn-primary">Remove</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section" id="fiveB">
+            <h1>Additional Assistance Required</h1>
+            <p>Contact an administrator for your account.</a>.</p>
+
+            <form class="form-horizontal">
+
+                <input type="hidden" name="csrfToken" value="18E1DD22A0519C4BB47425C95B654455766F4552" />
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+
+                        <button type="button" value="Ok" id="redirectToLoginFiveB" class="btn btn-primary">Ok</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <div id="loading">
+                            <img src="spinner-large.gif" alt="Loading..." />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModaltitle">Account Locked</h4>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default hidden" id="myModalDismiss" data-dismiss="modal">OK</button>
+                        <a href="login.cfm" id="myModalLink" class="btn btn-primary">Continue to Login Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br /><br /><br /><br /><br />
+    <div style="position: absolute;right: 0;bottom: 0;left: 0;" class="hidden-print">
+        <div class="nav nav-default" style="background-color: #fff;">
+            <div class="col-sm-12">
+                <!-- 
+                <br />
+                <p>
+                    <strong>&copy; 2021 Shift4 Payments, LLC</strong> &nbsp;
+                    <a href="https://www.shift4.com/privacy.cfm" target="_blank">Privacy</a> |
+                    <a href="https://www.shift4.com/company/contact/" target="_blank">Contact Us</a> |
+                    <a href="tel:18882762108">888.276.2108</a>
+                </p>
+                <small class="text-muted">Shift4<sup>&reg;</sup> is a registered trademark of Shift4 Payments, LLC. All Rights Reserved. </small><br />
+                <small class="text-muted">Shift4 Payments, LLC is a registered ISO of Citizens Bank, N.A., Providence, RI.</small>
+ -->
+            </div>
+        </div>
+    </div>
+
+    <div class="visible-print">
+        <div class="nav nav-default" style="background-color: #fff;">
+
+            <div class="col-xs-6">
+                <!-- <br />
+                <p>Copyright &copy; 2021 <br />Shift4 Payments, LLC. All rights reserved.&nbsp;</p> -->
+            </div>
+            <div class="col-xs-6 text-right">
+                <!--  <br />
+                <p>70.173.241.140<br />Mon, Mar 01, 2021 10:03 AM PST</p> -->
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>

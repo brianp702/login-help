@@ -1,0 +1,428 @@
+@charset "utf-8";
+
+/*
+**	login.css
+**	
+**	Additions and/or overrides.
+*/
+
+sup i.fa-fw,
+sup i.fa-asterisk {
+    display: none !important;
+}
+
+.section {
+    display: none;
+    width: 500px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #660099;
+}
+
+#loading {
+    display: none;
+}
+
+#hdr {
+    height: auto !important;
+    padding: 0 !important;
+}
+
+#hdrShift4 {
+    float: right;
+    padding: 12px 10px;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#hdrShift4 a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#hdrShift4 a:hover {
+    text-decoration: underline;
+}
+
+#behindMainContent {
+    background-image: URL(../images/purpleGradBG800.png);
+    background-color: #FFFFFF;
+    background-repeat: repeat-x;
+}
+
+#rightCol {
+    padding-top: 20px;
+    background-image: URL(../images/purpleGradBG800.png);
+    background-color: #FFFFFF;
+    background-repeat: repeat-x;
+    width: 310px;
+    margin-left: 468px;
+    position: absolute;
+}
+
+#ftr {
+    background-image: URL(../images/footerBG40.png);
+    background-color: #FFFFFF;
+    background-repeat: repeat-x;
+    clear: both;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+}
+
+#shift4Ad {
+    background-color: #FFFFFF;
+    width: 274px;
+    height: 332px;
+    padding: 0;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+    border-radius: 14px;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -webkit-box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.4);
+    box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.4);
+    position: relative;
+    /* fix for CSS3 PIE */
+}
+
+#shift4Ad>a>img {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+}
+
+#neon {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.neonX1 {
+    background-color: #FFFF00;
+}
+
+.neonX2 {
+    color: #9999FF;
+    background-color: #FFFF33;
+}
+
+.neonX3 {
+    color: #6666FF;
+    background-color: #FFFF66;
+}
+
+.neonX4 {
+    color: #3333FF;
+    background-color: #FFFF99;
+}
+
+.neonX5 {
+    color: #0000FF;
+    background-color: #FFFFAA;
+}
+
+.apopup {
+    display: none;
+}
+
+#sysStatus .yellow,
+#sysStatus .systemStatus_yellow {
+    color: #999900;
+}
+
+#statusAndAlerts {}
+
+#statusAndAlerts h3 {
+    /*
+	display : block;
+	background-color: #666666;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform : uppercase;
+	padding: 3px 20px;
+	margin: 0 -20px;
+*/
+}
+
+#statusAndAlerts h1 {
+    color: #000000;
+}
+
+#statusAndAlerts h3.red,
+#statusAndAlerts .systemStatus_red h3 {
+    background-color: #E42217;
+    /* Firebrick2 */
+}
+
+#statusAndAlerts h3.amber,
+#statusAndAlerts .systemStatus_amber h3 {
+    background-color: #F88017;
+    /* dark orange */
+}
+
+#statusAndAlerts h3.yellow,
+#statusAndAlerts .systemStatus_yellow h3 {
+    background-color: #FFFF00;
+    /* yellow */
+    color: #000000;
+}
+
+#statusAndAlerts h3.ltgreen,
+#statusAndAlerts .systemStatus_ltgreen h3 {
+    background-color: #347235;
+    /* lawn green */
+}
+
+#statusAndAlerts h3.green,
+#statusAndAlerts .systemStatus_green h3 {
+    background-color: #347235;
+    /* medium forest green */
+}
+
+#statusAndAlerts h1.red,
+#statusAndAlerts .systemStatus_red h1,
+#statusAndAlerts h1.amber,
+#statusAndAlerts .systemStatus_amber h1 {
+    color: #E42217;
+    /* Firebrick2 */
+}
+
+#dialogMessage h1 {
+    font-size: 18px;
+    color: #ff3333;
+}
+
+#dialogMessage fieldset {
+    font-family: Arial, Tahoma, Helvetica;
+    color: #000000;
+}
+
+#dialogMessage legend {
+    font-family: Arial, Tahoma, Helvetica;
+    color: #000000;
+    padding: 8px;
+}
+
+#xclockAlert {
+    background-color: red;
+    color: black;
+    display: none;
+    margin: 0 20px;
+    padding: 4px 20px;
+    border: thin solid Black;
+}
+
+#clockAlert {
+    background-color: white;
+    color: Red;
+    display: none;
+    margin: 0 20px;
+    padding: 4px 20px;
+    border-bottom: thin solid Red;
+    width: 390px !important;
+}
+
+.right {
+    text-align: right;
+}
+
+#statusHdr {
+    padding-bottom: 10px;
+}
+
+#statusFtr {
+    margin: 0 -13px -7px -13px;
+}
+
+#colorKeys {
+    float: right;
+    width: 120px;
+}
+
+#colorKey {
+    width: 120px;
+    text-align: center;
+}
+
+.summaryIcon {
+    text-align: center;
+    padding: 1px 8px 1px 2px;
+}
+
+.summaryText {
+    padding: 1px 8px 1px 2px;
+    cursor: pointer;
+    font-size: 11px;
+    width: 235px;
+}
+
+.summaryText:HOVER {
+    text-decoration: underline;
+}
+
+.summaryNav {
+    padding: 8px;
+    text-align: right;
+    font-size: 10px;
+}
+
+.statusItem {
+    clear: both;
+    padding-bottom: 4px;
+}
+
+.statusItem:HOVER {
+    text-decoration: underline;
+}
+
+.statusIcon {
+    width: 65px;
+    text-align: center;
+    vertical-align: top;
+    padding: 2px 0 0 0;
+}
+
+.statusText {
+    padding: 0 10px;
+}
+
+.statusSpacer {
+    clear: both;
+    height: 2px;
+}
+
+table.statusMessage {
+    padding-top: 8px;
+}
+
+#statusDlg,
+#statusDlg p,
+#statusDlg h2,
+#statusDlg h3,
+#statusDlg li,
+#statusDlg td,
+#statusDlg th {
+    font-size: 11px;
+}
+
+#statusDlg h1 {
+    font-size: 12px;
+}
+
+#statusDlg p {
+    clear: both;
+    padding: 0 0 8px 0;
+    margin: 0;
+}
+
+#statusDlg h1,
+#statusDlg h2,
+#statusDlg h3 {
+    padding: 8px 0 0 0;
+    margin: 0;
+}
+
+#statusDlg a,
+#statusDlg a:visited,
+#statusDlg a:active {
+    text-decoration: none;
+    color: #6E298D;
+    /* shift4 purple */
+}
+
+#statusDlg a:hover {
+    text-decoration: underline;
+    color: #6E298D;
+    /* shift4 purple */
+}
+
+#statusNav {
+    font-size: 10px;
+}
+
+.statusNav {
+    padding: 2px 20px;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+element.style {
+    display: block;
+    height: auto;
+    left: 700px;
+    outline: 0 none;
+    top: 239px;
+    width: 496px;
+    z-index: 1002;
+}
+
+.ui-button:focus {
+    outline: none !important
+}
+
+.ui-dialog {
+    padding: 0;
+}
+
+.ui-dialog-titlebar {
+    height: 12px;
+}
+
+.ui-widget-header {
+    background: #CBB2D6;
+}
+
+.ui-dialog .ui-dialog-title {
+    padding: 0;
+    margin: 0 16px 0 0;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+    -moz-border-radius-bottomright: 0;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+    -moz-border-radius-bottomleft: 0;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+    -moz-border-radius-topright: 0;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+    -moz-border-radius-topleft: 0;
+}
+
+.ui-widget-overlay {
+    background: #000000 url("../themes/jquery-ui-smoothness/css/custom-theme/images/ui-bg_flat_0_aaaaaa_40x100.png");
+    opacity: 0.8;
+    filter: Alpha(Opacity=80);
+    /*
+    background: #333333;
+    */
+}
+
+.sysMessage {
+    width: 375px;
+}
+
+.twoFactorLostMessage {
+    display: none;
+}
