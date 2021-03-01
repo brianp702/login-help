@@ -1,14 +1,6 @@
-# LoginHelp
-Login help for users that forgot their credentials. Coded by Brian Payne in 2016 during his employment at Shift4 Payments. This is one of the few publicly visible web sites that I (Brian) worked on at Shift4. Most of my work is not publicly available.
+# Login help
+Login help is a single page JS app (jQuery/AJAX) for users that forgot their login credentials.
 
-Open https://s706.dollarsonthenet.net/ and click the link "Login Help"
+It does much more that recover a password. It is made for a very secure system where each user has an account number, username, password, email, security questions, and 2 factor authentication. 
 
-This is a single page JavaScript app (jQuery/AJAX). The heavy lifting is done with ColdFusion components and SQL on the backend. The user is guided though the process of logging in or resetting their password, by verifying their identity through account ID, user name, email, security questions, and/or 2 factor authentication (if enabled). You won't get far without valid information.
-
-The backend code (ColdFusion) is confidential, and that's where all the interesting logic is. But the HTML, CSS and JavaScript files are public by viewing the source code of loginHelp.cfm.
-
-Noteworthy files:
-* https://s706.dollarsonthenet.net/loginHelp.cfm (view source)
-* https://s706.dollarsonthenet.net/js/loginhelp.js
-* https://s706.dollarsonthenet.net/css/login.css
-
+I built it for a client. I have permission to publish the frontend code (after removing identifying company information). I don't have permission to publish the backend logic, which was written in ColdFusion. It had a lot of interesting business logic involving security, SQL queries, decryption, password history, failed login attempts, and 2 factor authentication (Google's implementation). 
