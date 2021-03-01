@@ -5,7 +5,7 @@ It does much more that recover a password. It is made for a very secure system w
 
 I built it for a client. A significant percentage of their support calls were from customers that needed help logging in to the system. The nature of the login process and security made it challenging to provide self service password recovery. Once this was deployed, customer support calls decreased and they were able to reduce their wait times.
 
-The hardest part of the project was creating a flowchart of the password recovery process that used all of the security features of the system. I wish I could publish the flowchart -- it is very complex and interesting. 
+The hardest part of the project was creating a flowchart of the password recovery process that used all of the security features of the system. I wish I could publish the flowchart -- it is very complex and interesting. And QA had a wonderful time testing the dozens of possible flows, each one requiring a different account setup.
 
 The password reset process could be different for each user, depending on how their account administrator set up the account.
 
