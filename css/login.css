@@ -30,7 +30,7 @@ a:hover {
     padding: 0 !important;
 }
 
-#hdrShift4 {
+#hdrsite {
     float: right;
     padding: 12px 10px;
     font-size: 12px;
@@ -38,12 +38,12 @@ a:hover {
     font-weight: bold;
 }
 
-#hdrShift4 a {
+#hdrsite a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-#hdrShift4 a:hover {
+#hdrsite a:hover {
     text-decoration: underline;
 }
 
@@ -74,7 +74,7 @@ a:hover {
     font-size: 12px;
 }
 
-#shift4Ad {
+#siteAd {
     background-color: #FFFFFF;
     width: 274px;
     height: 332px;
@@ -91,7 +91,7 @@ a:hover {
     /* fix for CSS3 PIE */
 }
 
-#shift4Ad>a>img {
+#siteAd>a>img {
     margin-left: 0 !important;
     margin-top: 0 !important;
 }
@@ -332,13 +332,13 @@ table.statusMessage {
 #statusDlg a:active {
     text-decoration: none;
     color: #6E298D;
-    /* shift4 purple */
+    /* site purple */
 }
 
 #statusDlg a:hover {
     text-decoration: underline;
     color: #6E298D;
-    /* shift4 purple */
+    /* site purple */
 }
 
 #statusNav {
