@@ -3,7 +3,11 @@ Login help is a single page JS app (jQuery/AJAX) for users that forgot their log
 
 It does much more that recover a password. It is made for a very secure system where each user has an account number, username, password, email, security questions, and 2 factor authentication. If the user knows at least some of these things, they can likely reset their password.
 
-I built it for a client. A significant percentage of their support calls were from customers that needed help logging in to the system. The nature of the login process and security made it challenging to provide self service password recovery. Once this was deployed, customer support calls decreased and they were able to reduce their wait times.
+The problem: a significant percentage of the client's support calls were from customers that needed help logging in to the system. The nature of the login process and security made it challenging to provide self service password recovery.
+
+The solution: walk the user through the recovery process, depending on their account and user configurations. 
+
+The result: customer support calls decreased and they were able to reduce their wait times significantly.
 
 The hardest part of the project was creating a flowchart of the password recovery process that used all of the security features of the system. QA had a wonderful time testing the dozens of possible flows, each one requiring a different account setup.
 
@@ -16,5 +20,3 @@ Examples:
 * User lockout time could be any duration set by the administrator.
 * One user might be required to enter a multifactor authenticator code at each login, in addition to their password. Other users might only need a password.
 * Most users had email addresses associated with their account, but some didn't. These users couldn't have their username or verification code emailed to them. But if they knew their secret questions or had a multifactor authenticator code, they were still able to reset their password.
-
-I have permission to publish the frontend code and a vague description of the logic. I don't have permission to publish the backend logic, which was written in ColdFusion. It had a lot of business logic involving security, decryption, password history, failed login attempts, 2 factor authentication (Google's implementation) and lots of SQL queries.
