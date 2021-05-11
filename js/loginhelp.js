@@ -15,7 +15,7 @@ $(document).ready(function() {
         if ($('#formOne').valid()) {
             $.ajax({
                 cache: false,
-                url: 'loginhelp.ajax.js',
+                url: 'loginhelp.ajax.php',
                 type: "POST",
                 data: {
                     action: 'submitAccountNumber',
@@ -41,7 +41,7 @@ $(document).ready(function() {
         if ($('#formTwo').valid()) {
             $.ajax({
                 cache: false,
-                url: 'loginhelp.ajax.js',
+                url: 'loginhelp.ajax.php',
                 type: "POST",
                 data: {
                     action: 'submitUsername',
@@ -67,7 +67,7 @@ $(document).ready(function() {
         if ($('#formTwoA').valid()) {
             $.ajax({
                 cache: false,
-                url: 'loginhelp.ajax.js',
+                url: 'loginhelp.ajax.php',
                 type: "POST",
                 data: {
                     action: 'submitEmailAddress',
@@ -87,7 +87,7 @@ $(document).ready(function() {
         if ($('#formThreeFour').valid()) {
             $.ajax({
                 cache: false,
-                url: 'loginhelp.ajax.js',
+                url: 'loginhelp.ajax.php',
                 type: "POST",
                 data: {
                     action: 'submitEmailAddressThreeFour',
@@ -99,7 +99,7 @@ $(document).ready(function() {
                     if (result.success) {
                         $.ajax({
                             cache: false,
-                            url: 'loginhelp.ajax.js',
+                            url: 'loginhelp.ajax.php',
                             type: "POST",
                             data: {
                                 action: 'getPasswordRules',
@@ -142,7 +142,7 @@ $(document).ready(function() {
         if ($('#formThree').valid()) {
             $.ajax({
                 cache: false,
-                url: 'loginhelp.ajax.js',
+                url: 'loginhelp.ajax.php',
                 type: "POST",
                 data: {
                     action: 'submitUserPassword',
@@ -154,7 +154,7 @@ $(document).ready(function() {
                     if (result.success) {
                         $.ajax({
                             cache: false,
-                            url: 'loginhelp.ajax.js',
+                            url: 'loginhelp.ajax.php',
                             type: "POST",
                             data: {
                                 action: 'checkForUserAuthenticator',
@@ -176,7 +176,7 @@ $(document).ready(function() {
                     } else {
                         $.ajax({
                             cache: false,
-                            url: 'loginhelp.ajax.js',
+                            url: 'loginhelp.ajax.php',
                             type: "POST",
                             data: {
                                 action: 'checkForUserAuthenticator',
@@ -207,7 +207,7 @@ $(document).ready(function() {
     $('#forgotPassword').click(function() {
         $.ajax({
             cache: false,
-            url: 'loginhelp.ajax.js',
+            url: 'loginhelp.ajax.php',
             type: "POST",
             data: {
                 action: 'checkForUserAuthenticator',
@@ -232,7 +232,7 @@ $(document).ready(function() {
         if ($('#formThreeOne').valid()) {
             $.ajax({
                 cache: false,
-                url: 'loginhelp.ajax.js',
+                url: 'loginhelp.ajax.php',
                 type: "POST",
                 data: {
                     action: 'submitUserPasscode',
@@ -245,7 +245,7 @@ $(document).ready(function() {
                         if (result.hasemail) {
                             $.ajax({
                                 cache: false,
-                                url: 'loginhelp.ajax.js',
+                                url: 'loginhelp.ajax.php',
                                 type: "POST",
                                 data: {
                                     action: 'getPasswordRules',
@@ -268,7 +268,7 @@ $(document).ready(function() {
                         } else {
                             $.ajax({
                                 cache: false,
-                                url: 'loginhelp.ajax.js',
+                                url: 'loginhelp.ajax.php',
                                 type: "POST",
                                 data: {
                                     action: 'hasSecretQuestions',
@@ -279,7 +279,7 @@ $(document).ready(function() {
                                     if (result.success) {
                                         $.ajax({
                                             cache: false,
-                                            url: 'loginhelp.ajax.js',
+                                            url: 'loginhelp.ajax.php',
                                             type: "POST",
                                             data: {
                                                 action: 'getSecretQuestion',
@@ -319,7 +319,7 @@ $(document).ready(function() {
         if ($('#formFiveA').valid()) {
             $.ajax({
                 cache: false,
-                url: 'loginhelp.ajax.js',
+                url: 'loginhelp.ajax.php',
                 type: "POST",
                 data: {
                     action: 'removeAuthenticator',
@@ -343,7 +343,7 @@ $(document).ready(function() {
         if ($('#formThreeOneA').valid()) {
             $.post({
                 cache: false,
-                url: 'loginhelp.ajax.js',
+                url: 'loginhelp.ajax.php',
                 data: {
                     action: 'submitVerificationCodeAndNewPassword',
                     verificationCode: $('#verificationCode').val(),
@@ -368,7 +368,7 @@ $(document).ready(function() {
         if ($('#formThreeThreeA').valid()) {
             $.post({
                 cache: false,
-                url: 'loginhelp.ajax.js',
+                url: 'loginhelp.ajax.php',
                 data: {
                     action: 'submitNewPasswordThreeThreeA',
                     newPasswordThreeThreeA: $('#newPasswordThreeThreeA').val(),
@@ -397,7 +397,7 @@ $(document).ready(function() {
         if ($('#formThreeThree').valid()) {
             $.ajax({
                 cache: false,
-                url: 'loginhelp.ajax.js',
+                url: 'loginhelp.ajax.php',
                 type: "POST",
                 data: {
                     action: 'submitSecretQuestion',
@@ -411,7 +411,7 @@ $(document).ready(function() {
                         $('#answer').focus();
                         $.ajax({
                             cache: false,
-                            url: 'loginhelp.ajax.js',
+                            url: 'loginhelp.ajax.php',
                             type: "POST",
                             data: {
                                 action: 'getSecretQuestion',
@@ -435,7 +435,7 @@ $(document).ready(function() {
 
                             $.ajax({
                                 cache: false,
-                                url: 'loginhelp.ajax.js',
+                                url: 'loginhelp.ajax.php',
                                 type: "POST",
                                 data: {
                                     action: 'getPasswordRules',
@@ -499,7 +499,7 @@ $(document).ready(function() {
     $('#dontKnowEmailAddress').click(function() {
         $.ajax({
             cache: false,
-            url: 'loginhelp.ajax.js',
+            url: 'loginhelp.ajax.php',
             type: "POST",
             data: {
                 action: 'hasSecretQuestions',
@@ -510,7 +510,7 @@ $(document).ready(function() {
                 if (result.success) {
                     $.ajax({
                         cache: false,
-                        url: 'loginhelp.ajax.js',
+                        url: 'loginhelp.ajax.php',
                         type: "POST",
                         data: {
                             action: 'getSecretQuestion',
@@ -552,7 +552,7 @@ $(document).ready(function() {
     $('#noPasscodeEmail').click(function() {
         $.ajax({
             cache: false,
-            url: 'loginhelp.ajax.js',
+            url: 'loginhelp.ajax.php',
             type: "POST",
             data: {
                 action: 'hasSecretQuestions',
@@ -563,7 +563,7 @@ $(document).ready(function() {
                 if (result.success) {
                     $.ajax({
                         cache: false,
-                        url: 'loginhelp.ajax.js',
+                        url: 'loginhelp.ajax.php',
                         type: "POST",
                         data: {
                             action: 'getSecretQuestion',
