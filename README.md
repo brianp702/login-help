@@ -1,5 +1,5 @@
 # Login help
-Login help is a single page JS app (jQuery/AJAX) for users that forgot their login credentials. Here, the backend is in PHP, and not fleshed out. Of course, the original implementation for the client was completely functional with a backend in ColdFusion and SQL Server.
+Login help is a single page JS app (jQuery/AJAX) for users that forgot their login credentials. Here, the backend is in PHP, and not fleshed out. Of course, the original implementation for the client was completely functional, with a backend in ColdFusion and SQL Server.
 
 The original implementation for the client does much more that recover a password. It is made for a system where each user has an account number, username, password, email, security questions, and 2 factor authentication. If the user knows at least some of these things, they can likely reset their password.
 
